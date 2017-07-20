@@ -128,9 +128,6 @@ function createCard(data, url, key, direction) {
                         .addClass("mdl-card__title-text")
                         .text(data.place))
                 , $("<div>")
-                    .addClass("mdl-card__supporting-text")
-                    .text(data.description)
-                , $("<div>")
                     .addClass("mdl-card__actions mdl-card--border")
                     .append($("<a>")
                         .click(function () {

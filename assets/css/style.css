@@ -640,10 +640,12 @@ html,body {
     font-weight:700;
     background-color:#c50;
     color: white;
-    width:100%;
+    width: 300px;
     border-radius:5px;
-    margin-left:10px
     font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    text-align: center;
 }
 
 #NewestImageCard > div.mdl-card__actions > a {
@@ -821,4 +823,22 @@ html,body {
     border-radius: 0.2em; 
 
 }
+
+#itemsGrid > div > div > div.mdl-card__actions.mdl-card--border > a {
+    color: white;
+    background-color: #c50;
+    border-radius: 0.2em
+    border: solid .5px #c50;
+    box-shadow: 2px 2px 2px darkgray;
+
+}
+
+.mdl-card__title-text {
+    color: white;
+    text-shadow: 1.5px 1.5px 0 #000;
+    font-weight:700;
+    width:100%;
+    opacity: .9
+}
+
 

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>getFrisk - Home</title>
-    <!--Google Material stuff for the next 3 lines-->
+    <!--Google Material stuff -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css"/>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- style sheets -->
     <link rel="stylesheet" href="assets/css/dialog-polyfill.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
     <!--Alice Yu, Don Fox, Amanda Wittenstein, Adam Koss, Neetu Toor -->
 
@@ -34,6 +36,36 @@
                 <a class="mdl-navigation__link" href="">Categories</a>
                 <a class="mdl-navigation__link" href="map.html">Home</a>
             </nav>
+            <!-- Button to open the modal login form -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
+       <!--  <div class="container"> -->
+          <!-- <label><b>Email</b></label> -->
+          <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
+          <br>
+       
+          <!-- <label><b>Password</b></label> -->
+          <input type="password" placeholder="Password" name="psw" required id="txtPassword"><br>
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnLogin" onclick="LoginEmailPassword()">SIGN IN</button><br>
+          
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnGoogleLogin" onclick="googleSignin()">SIGN IN WITH GOOGLE</button><br>
+    
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnRegister" onclick="registerWithEmailPassword()">Register</button><br>
+          
+          <br>
+        </div>
         </div>
     </header>
     <div class="mdl-layout__drawer">
@@ -65,7 +97,7 @@
 <br>
 <br>
 <br>
-<!---Banner Image and Site Description--->
+
 <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="imageBannerHome">
     <div class="mdl-card__title" id="imageBannerTitle">
         <div class="textBoxIndex">
@@ -188,7 +220,7 @@
                     <h1 class="mdl-card__title-text">Booze</h1>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    On the hunt for the largest margarita, tastiest nachos, or ugliest desert?
+                    On the hunt for the largest margarita, tastiest nachos, or ugliest dessert?
                     <br>
                     <br>
                 </div>
@@ -225,7 +257,7 @@
                     <h1 class="mdl-card__title-text">Art</h1>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    Come inside to discover the cities most interesting graphiti, mixed media, and
+                    Come inside to discover the cities most interesting graffiti, mixed media, and
                     reclaimed treasures
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
@@ -242,7 +274,7 @@
                     <h1 class="mdl-card__title-text">Food</h1>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    EAT A FOOD
+                    Explore some of the fascinating foods in Austin! 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect catHomeButton"
@@ -363,6 +395,9 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtmZkD0EW6EkmRy4Q7bPEEduGYYlrY1kI&libraries=places"
         async defer></script>
+
+<script type="text/javascript" src="login.js">
+    </script>
 
 </body>
 

@@ -28,7 +28,7 @@
 }
 
 #addPin {
-    margin-left:54px;
+    margin-left: 15px;
     background-color:#c50;
     font-family:'Amatic SC',cursive
 }
@@ -48,7 +48,7 @@
 }
 
 #category {
-    margin-left:55px
+    margin-left:20px
 }
 
 #categoryBreak {
@@ -58,6 +58,10 @@
     color:grey;
     height:50px;
     margin-top:50px
+}
+
+#categorySearch {
+    margin-left: 20px;
 }
 
 #categoryBreak2 {
@@ -151,12 +155,14 @@
 
 #imageBannerHome {
     width:100%;
+  /*  opacity: 10;*/
 }
 
 #imageBannerTitle {
     color:#fff;
     height:400px;
     background:url(../images/austin.jpeg) center / cover;
+    
 }
 
 #imageBox {
@@ -192,7 +198,12 @@
 #mapPanel {
     width:20%;
     opacity:.9;
-    padding-top:30px
+    padding-top:35px
+    border-radius: 20px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 5px 10px 5px #cbcbcb;
+    padding-top: 25px;
+    width: 19%;
 }
 
 #mixedImageCard {
@@ -223,7 +234,8 @@
     font-size:11px;
     text-align:center;
     padding-bottom:5px;
-    float:right
+    margin-left: 20px;
+   /* float:left*/
 }
 
 #secondaryPageText {
@@ -324,6 +336,7 @@
     width:256px;
     height:256px;
     background:url(../images/tree.jpg) center / cover;
+    /*opacity: .2;*/
 }
 
 .demo-card-image>.mdl-card__actions {
@@ -618,3 +631,194 @@ html,body {
     margin:0;
     padding:0
 }
+
+#topNavBox {
+    background-color: white;
+}
+
+#HighestRatedImageCard > div.mdl-card__actions > a {
+    font-weight:700;
+    background-color:#c50;
+    color: white;
+    width:100%;
+    border-radius:5px;
+    margin-left:10px
+    font-size: 16px;
+}
+
+#NewestImageCard > div.mdl-card__actions > a {
+    font-weight:700;
+    background-color:#c50;
+    color: white;
+    width:100%;
+    border-radius:5px;
+    margin-left:10px;
+    font-size: 16px;
+}
+
+#PicsImageCard > div.mdl-card__actions > a {
+    font-weight:700;
+    background-color:#c50;
+    color: white;
+    width:100%;
+    border-radius:5px;
+    margin-left:10px;
+    font-size: 16px;
+}
+
+#resetCategories {
+    color:#c50; 
+    border: 1px solid lightgray; 
+    box-shadow: 2px 5px 2px gray; 
+    border-radius: 3px; 
+    width: 104;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+#submitButton {
+    background-color: #c50;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid 1px teal;
+    box-shadow: 2px 2px 2px #cbcbcb;
+    outline: 0;
+    letter-spacing: 1px;
+    border-radius: 5px;    
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+#form {
+    background-color: pink;
+}
+
+#txtEmail {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+   /* box-shadow: 10px 10px 10px #cbcbcb;*/
+    border: none;
+    outline: none;
+
+}
+
+#txtPassword{
+   text-align: center;
+   margin-left: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+    border: none;
+    outline: none; 
+}
+
+#btnLogin {
+    background-color: #c50;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em;
+
+}
+
+#btnRegister {
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    color: #c50;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em; 
+}
+
+#btnGoogleLogin {
+   background-color: gray;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em; 
+
+}
+

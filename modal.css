@@ -55,6 +55,95 @@
     to {transform: scale(1)}
 }
 
-#login {
-    background-color: orange;
+
+#submitButton {
+    background-color: teal;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid 1px teal;
+    box-shadow: 5px 5px 5px #cbcbcb;
+    outline: 0;
+    letter-spacing: 1px;
+    border-radius: 10px;    
+    margin-top: 5px;
+    margin-left: 5px;
+
 }
+
+#form {
+    background-color: pink;
+}
+
+#txtEmail {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+   /* box-shadow: 10px 10px 10px #cbcbcb;*/
+    border: none;
+    outline: none;
+
+}
+
+#txtPassword{
+   text-align: center;
+   margin-left: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+    border: none;
+    outline: none; 
+}
+
+#btnLogin {
+    background-color: #c50;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em;
+
+}
+
+#btnRegister {
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    color: #c50;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em; 
+}
+
+#btnGoogleLogin {
+   background-color: gray;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border: solid .5px white;
+    box-shadow: 2px 2px 2px darkgray;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border-radius: 0.2em; 
+
+}
+
+

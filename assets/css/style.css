@@ -1,10 +1,7 @@
-@import "https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic";
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
 
 @import "https://fonts.googleapis.com/css?family=Pacifico";
-
-#HighestRatedImageCard {
-    background:url(../images/butter.jpg) center / cover;
-}
 
 #NewestImageCard {
     background:url(../images/doughnut.jpeg) center / cover;
@@ -83,10 +80,6 @@
     width:100%;
     border-radius:5px;
     margin-left:10px
-}
-
-#categoryCardsGrid {
-    background-color:lightgray
 }
 
 #categoryHome {

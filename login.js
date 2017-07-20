@@ -1,10 +1,10 @@
-var config = {
-  apiKey: "AIzaSyC_PB8vCA97DGt-uWAWq5s1L347thWX-Ig",
-  authDomain: "fir-auth-4ed23.firebaseapp.com",
-  databaseURL: "https://fir-auth-4ed23.firebaseio.com",
-  projectId: "fir-auth-4ed23",
-  storageBucket: "",
-  messagingSenderId: "736577492020"
+let config = {
+    apiKey: "AIzaSyDs83lnN6hSnVO09xZqEsKhSWK3nhAbRDk",
+    authDomain: "getfrisk.firebaseapp.com",
+    databaseURL: "https://getfrisk.firebaseio.com",
+    projectId: "getfrisk",
+    storageBucket: "gs://getfrisk.appspot.com/",
+    messagingSenderId: "932593743065"
 };
 
 firebase.initializeApp(config);

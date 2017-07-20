@@ -14,3 +14,4 @@ public
 functions
 firebase.json
 public/geo.json
+.DS_store

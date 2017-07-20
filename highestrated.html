@@ -21,25 +21,79 @@
   <br>
   <br>
 
-
-  <!---Banner Image and Site Description--->
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="artBannerHome">
-    <div class="mdl-card__title" id="artBannerTitle">
-      <p id="secondaryPageText">Highest Rated</p>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">FRISK<small>  see something</small></span>
+        <!-- Spacer -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation.  -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Add a Location</a>
+          <a class="mdl-navigation__link" href="">Categories</a>
+          <a class="mdl-navigation__link" href="map.html">Home</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">getFrisk</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Categories</a>
+        <a class="mdl-navigation__link" href="">Add a Location</a>
+        <a class="mdl-navigation__link" href="">Activities</a>
+        <a class="mdl-navigation__link" href="">Art</a>
+        <a class="mdl-navigation__link" href="">Booze</a>
+        <a class="mdl-navigation__link" href="">The Great Outdoors</a>
+        <a class="mdl-navigation__link" href="">Fun and Games</a>
+        <a class="mdl-navigation__link" href="">Food</a>
+        <a class="mdl-navigation__link" href="">Shops</a>
+        <a class="mdl-navigation__link" href="">Live Events</a>
+      </nav>
     </div>
-    <div class="mdl-card__supporting-text" id="activitiesTitleText">
-      <p id="homepagetext">Discover locations through a variety of different ways</p>
-    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Your content goes here -->
+      </div>
+    </main>
   </div>
-  <div class="mdl-card__actions mdl-card--border">
-  </div>
-  <!-- buttons -->
 
   <hr>
 
   <!-- locations -->
   <div id="categoryGridHolder"></div>
+  <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title" id="modalPlace"></h4>
+    <div class="mdl-dialog__content">
+      <div id="smallMap"></div>
+      <img class='modalImage' id="modalImage">
+      <p id="modalAddress"></p>
+      <p id="modalDescription"></p>
+      <div id="modalRating">
+        <div class="wrap">
+          <div class="votes" id="modalVotes"></div>
+          <div class="button" id="modalUpvote">Upvote!</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button close">Close</button>
+    </div>
+  </dialog>
 
+
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <ul class="mdl-mini-footer__link-list">
+        <li><a href="terms.html">Guidelines and Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mini-footer__right-section">
+      <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:75px;">
+    </div>
+  </footer>
 
   <br><br><br><br><br>
   <script

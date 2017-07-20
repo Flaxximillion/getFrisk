@@ -6,6 +6,7 @@ let config = {
     storageBucket: "gs://getfrisk.appspot.com/",
     messagingSenderId: "932593743065"
 };
+
 firebase.initializeApp(config);
 
 let database = firebase.database();
@@ -127,9 +128,6 @@ function createCard(data, url, key, direction) {
                     .addClass("mdl-card__title mdl-card--expand").append($("<h2>")
                         .addClass("mdl-card__title-text")
                         .text(data.place))
-                , $("<div>")
-                    .addClass("mdl-card__supporting-text")
-                    .text(data.description)
                 , $("<div>")
                     .addClass("mdl-card__actions mdl-card--border")
                     .append($("<a>")

@@ -16,50 +16,85 @@
 </head>
 
 <body>
-
-  <br>
-  <br>
-  <br>
-
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+ <<!-- beginning of navigation bar -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">FRISK<small>  see something</small></span>
-        <!-- Spacer -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation.  -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Add a Location</a>
-          <a class="mdl-navigation__link" href="">Categories</a>
-          <a class="mdl-navigation__link" href="map.html">Home</a>
-        </nav>
-      </div>
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title"><strong>FRISK</strong><small>  <i> see something</i></small></span>
+            <!-- Spacer -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation.  -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <!--       
+                <a class="mdl-navigation__link" href="index.html">HOME</a>
+                <a class="mdl-navigation__link" href="map.html">ADD A LOCATION</a> -->
+                
+            </nav>
+            <!-- Button to open the modal login form -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
+        
+         <!--  <div class="container"> -->
+          <!-- <label><b>Email</b></label> -->
+          <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
+          <br>
+
+          <!-- <label><b>Password</b></label> -->
+          <input type="password" placeholder="Password" name="psw" required id="txtPassword"><br>
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnLogin" onclick="LoginEmailPassword()">SIGN IN</button><br>
+
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnGoogleLogin" onclick="googleSignin()">SIGN IN WITH GOOGLE</button><br>
+
+          <br>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnRegister" onclick="registerWithEmailPassword()">Register</button><br>
+
+          <br>
+        </div>
+        </div>
+        </div>
     </header>
+
+    <!-- end of login form -->
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">getFrisk</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Categories</a>
-        <a class="mdl-navigation__link" href="">Add a Location</a>
-        <a class="mdl-navigation__link" href="">Activities</a>
-        <a class="mdl-navigation__link" href="">Art</a>
-        <a class="mdl-navigation__link" href="">Booze</a>
-        <a class="mdl-navigation__link" href="">The Great Outdoors</a>
-        <a class="mdl-navigation__link" href="">Fun and Games</a>
-        <a class="mdl-navigation__link" href="">Food</a>
-        <a class="mdl-navigation__link" href="">Shops</a>
-        <a class="mdl-navigation__link" href="">Live Events</a>
-      </nav>
+        <span class="mdl-layout-title" id="getFrisk">getFrisk</span>
+        <nav class="mdl-navigation">
+            <!-- <a class="mdl-navigation__link" href="">Categories</a -->
+            <a class="mdl-navigation__link" href="./index.html">Home</a>
+            <a class="mdl-navigation__link" href="./map.html">Add a Location</a>
+            <a class="mdl-navigation__link" href="./newest.html">Newest</a>
+            <a class="mdl-navigation__link" href="./ourpicks.html">Our Picks</a>
+            <a class="mdl-navigation__link" href="./highestrated.html">Highest Rated</a>
+        </nav>
     </div>
+</div>
+
+<br>
+<br>
+<br>
+<!-- end of navigation bar -->
+
     <main class="mdl-layout__content">
       <div class="page-content">
         <!-- Your content goes here -->
       </div>
     </main>
   </div>
-
-  <hr>
-
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- locations -->
   <div id="categoryGridHolder"></div>
   <dialog class="mdl-dialog">
@@ -84,18 +119,17 @@
 
   <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
-      <ul class="mdl-mini-footer__link-list">
-        <li><a href="terms.html">Guidelines and Terms</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
+        <ul class="mdl-mini-footer__link-list">
+            <li><a href="terms.html">Guidelines and Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
     </div>
     <div class="mdl-mini-footer__right-section">
-      <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:75px;">
+        <!-- <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:70px; margin-top: 5px;"> -->
     </div>
-  </footer>
+</footer>
 
-  <br><br><br><br><br>
   <script
           src="https://code.jquery.com/jquery-3.2.1.js"
           integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="

@@ -1,10 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
 
 @import "https://fonts.googleapis.com/css?family=Pacifico";
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 footer{
-    position: fixed;
-    bottom:0;
+  /*  position: fixed*/;
+    margin-top: 50px;
+    padding-bottom: 0px;
     width:100%;
+    height: 100%;
     z-index: 100;
 }
 
@@ -99,6 +106,7 @@ input[type=submit]:hover {
 
 #categorySearch {
     margin-left: 20px;
+    width: 235px;
 }
 
 #categoryBreak2 {
@@ -234,7 +242,7 @@ input[type=submit]:hover {
 
 #mapPanel {
     opacity:.9;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid #cbcbcb;
     box-shadow: 5px 10px 5px #cbcbcb;
     padding-top: 25px;
@@ -553,7 +561,7 @@ input[type=submit]:hover {
 
 .mdl-layout-title {
     color:#fff;
-    font-family:'Enriqueta',serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .mdl-layout__drawer {
@@ -568,12 +576,14 @@ input[type=submit]:hover {
 .mdl-mini-footer__link-list {
     margin-top:30px;
     color:#fff;
-    font-family:'Enriqueta',serif
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .mdl-navigation__link {
     color:#fff!important;
-    font-family:'Enriqueta',serif
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
 }
 
 .modalImage {
@@ -653,10 +663,6 @@ html,body {
     height:80%;
     margin:0;
     padding:0
-}
-
-#topNavBox {
-    background-color: white;
 }
 
 #HighestRatedImageCard > div.mdl-card__actions > a {
@@ -774,14 +780,16 @@ html,body {
     width: 90px;
     height: 40px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     border: solid 1px teal;
     box-shadow: 2px 2px 2px #cbcbcb;
     outline: 0;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 28px;
+    font-family: 'Quicksand', sans-serif;
+    opacity: .8;
 
 }
 
@@ -873,4 +881,25 @@ html,body {
     font-weight:700;
     width:100%;
     opacity: .9;
+}
+
+.mdl-navigation__link:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; 
+}
+
+.mdl-layout__header-row {
+    height: 70px;
+}
+
+#getFrisk{
+    background-color: white;
+    color: #607d8b;
+    padding-top: 40px;
+    height: 84px;
+}
+
+.ul:hover {
+border-top: 1px solid #ffffff;
+border-bottom: 1px solid #ffffff; 
 }

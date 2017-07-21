@@ -19,28 +19,32 @@
 </head>
 
 <body>
+<!-- beginning of navigation bar -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">FRISK<small>  see something</small></span>
+            <span class="mdl-layout-title"><strong>FRISK</strong><small>  <i> see something</i></small></span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation.  -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="map.html">Add a Location</a>
-                <a class="mdl-navigation__link" href="index.html">Home</a>
+          <!--       
+                <a class="mdl-navigation__link" href="index.html">HOME</a>
+                <a class="mdl-navigation__link" href="map.html">ADD A LOCATION</a> -->
+                
             </nav>
             <!-- Button to open the modal login form -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
             <!-- The Modal -->
-    <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'"
-    class="close" title="Close Modal">&times;</span>
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
 
-      <!-- Modal Content -->
-      <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
-       <!--  <div class="container"> -->
+          <!-- Modal Content -->
+          <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
+        
+         <!--  <div class="container"> -->
           <!-- <label><b>Email</b></label> -->
           <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
           <br>
@@ -64,19 +68,17 @@
         </div>
         </div>
     </header>
+
+    <!-- end of login form -->
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">getFrisk</span>
+        <span class="mdl-layout-title" id="getFrisk">getFrisk</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Categories</a>
-            <a class="mdl-navigation__link" href="">Add a Location</a>
-            <a class="mdl-navigation__link" href="">Activities</a>
-            <a class="mdl-navigation__link" href="">Art</a>
-            <a class="mdl-navigation__link" href="">Booze</a>
-            <a class="mdl-navigation__link" href="">The Great Outdoors</a>
-            <a class="mdl-navigation__link" href="">Fun and Games</a>
-            <a class="mdl-navigation__link" href="">Food</a>
-            <a class="mdl-navigation__link" href="">Shops</a>
-            <a class="mdl-navigation__link" href="">Live Events</a>
+            <!-- <a class="mdl-navigation__link" href="">Categories</a -->
+            <a class="mdl-navigation__link" href="./index.html">Home</a>
+            <a class="mdl-navigation__link" href="./map.html">Add a Location</a>
+            <a class="mdl-navigation__link" href="./newest.html">Newest</a>
+            <a class="mdl-navigation__link" href="./ourpicks.html">Our Picks</a>
+            <a class="mdl-navigation__link" href="./highestrated.html">Highest Rated</a>
         </nav>
     </div>
 </div>
@@ -84,7 +86,9 @@
 <br>
 <br>
 <br>
+<!-- end of navigation bar -->
 
+<!-- homepage banner -->
 <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="imageBannerHome">
     <div class="mdl-card__title" id="imageBannerTitle">
         <div class="textBoxIndex">
@@ -109,7 +113,7 @@
         <div class="demo-card-image mdl-card mdl-shadow--2dp imageCards22" id="HighestRatedImageCard">
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="../highestrated.html">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="highestrated.html">
                     Highest Rated
                 </a>
             </div>
@@ -366,7 +370,7 @@
         </ul>
     </div>
     <div class="mdl-mini-footer__right-section">
-        <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:75px;">
+        <!-- <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:70px; margin-top: 5px;"> -->
     </div>
 </footer>
 

@@ -117,7 +117,7 @@ function createCard(data, url, key, direction) {
     console.log(url);
 
     let toAppend = ($("<div>")
-        .addClass("mdl-cell mdl-cell--3-col")
+        .addClass("mdl-cell mdl-cell-2-col")
         .append($("<div>")
             .addClass("demo-card-square mdl-card mdl-shadow--2dp locationCard")
             .css({

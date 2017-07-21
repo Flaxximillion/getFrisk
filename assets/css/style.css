@@ -178,7 +178,29 @@ input[type=submit]:hover {
 
 #categorySearch {
     margin-left: 20px;
-    width: 90%
+    width: 90%;
+}
+
+#categoryBreak2 {
+    text-align:center;
+    font-size:12px;
+    color:grey;
+    font-weight:700;
+    height:50px;
+    margin-top:50px
+}
+
+#categoryCards {
+    margin:25px;
+    width:300px
+}
+
+#categoryCards .mdl-card__title-text {
+    font-weight:700;
+    background-color:#c50;
+    width:100%;
+    border-radius:5px;
+    margin-left:10px;
 }
 
 #categoryHome {
@@ -646,13 +668,9 @@ input[type=submit]:hover {
     padding: 10px;
 }
 
-.mdl-mini-footer__link-list {
-    color: #fff;
-    font-family: 'Quicksand', sans-serif
-}
 
 .mdl-navigation__link {
-    color: #3D1301 !important;
+    color:#fff!important;
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
 }
@@ -767,10 +785,6 @@ body {
     background-color: #fff7e6;
     background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-
-#topNavBox {
-    background-color: white;
 }
 
 #HighestRatedImageCard > div.mdl-card__actions > a {
@@ -907,9 +921,11 @@ body {
     font-size: 16px;
     outline: 0;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 28px;
+    font-family: 'Quicksand', sans-serif;
+    opacity: .8;
 
 }
 
@@ -1001,4 +1017,25 @@ body {
     font-weight: 700;
     width: 100%;
     justify-content: center;
+}
+
+.mdl-navigation__link:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; 
+}
+
+.mdl-layout__header-row {
+    height: 70px;
+}
+
+#getFrisk{
+    background-color: white;
+    color: #607d8b;
+    padding-top: 40px;
+    height: 84px;
+}
+
+.ul:hover {
+border-top: 1px solid #ffffff;
+border-bottom: 1px solid #ffffff;
 }

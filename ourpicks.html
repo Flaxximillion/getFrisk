@@ -18,59 +18,111 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">FRISK<small>  see something</small></span>
+            <span class="mdl-layout-title"><strong>FRISK</strong><small>  <i> see something</i></small></span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation.  -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="map.html">Add a Location</a>
-                <a class="mdl-navigation__link" href="index.html">Home</a>
+                <!--
+                      <a class="mdl-navigation__link" href="index.html">HOME</a>
+                      <a class="mdl-navigation__link" href="map.html">ADD A LOCATION</a> -->
+
             </nav>
+            <!-- Button to open the modal login form -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+
+                <!-- Modal Content -->
+                <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
+
+                    <!--  <div class="container"> -->
+                    <!-- <label><b>Email</b></label> -->
+                    <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
+                    <br>
+
+                    <!-- <label><b>Password</b></label> -->
+                    <input type="password" placeholder="Password" name="psw" required id="txtPassword"><br>
+                    <br>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnLogin" onclick="LoginEmailPassword()">SIGN IN</button><br>
+
+                    <br>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnGoogleLogin" onclick="googleSignin()">SIGN IN WITH GOOGLE</button><br>
+
+                    <br>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnRegister" onclick="registerWithEmailPassword()">Register</button><br>
+
+                    <br>
+                </div>
+            </div>
         </div>
     </header>
+
+    <!-- end of login form -->
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">getFrisk</span>
+        <span class="mdl-layout-title" id="getFrisk">getFrisk</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Categories</a>
-            <a class="mdl-navigation__link" href="">Add a Location</a>
-            <a class="mdl-navigation__link" href="">Activities</a>
-            <a class="mdl-navigation__link" href="">Art</a>
-            <a class="mdl-navigation__link" href="">Booze</a>
-            <a class="mdl-navigation__link" href="">The Great Outdoors</a>
-            <a class="mdl-navigation__link" href="">Fun and Games</a>
-            <a class="mdl-navigation__link" href="">Food</a>
-            <a class="mdl-navigation__link" href="">Shops</a>
-            <a class="mdl-navigation__link" href="">Live Events</a>
+            <!-- <a class="mdl-navigation__link" href="">Categories</a -->
+            <a class="mdl-navigation__link" href="./index.html">Home</a>
+            <a class="mdl-navigation__link" href="./map.html">Add a Location</a>
+            <a class="mdl-navigation__link" href="./newest.html">Newest</a>
+            <a class="mdl-navigation__link" href="./ourpicks.html">Our Picks</a>
+            <a class="mdl-navigation__link" href="./highestrated.html">Highest Rated</a>
         </nav>
     </div>
-    <main class="mdl-layout__content">
-        <div class="page-content">
-            <!-- Your content goes here -->
-        </div>
-    </main>
 </div>
 
-  <br>
-  <br>
-  <br>
-
   <!---Banner Image and Site Description--->
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="artBannerHome">
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="artBannerHome">
     <div class="mdl-card__title" id="artBannerTitle">
-      <p id="secondaryPageText">Our Picks</p>
+        <div class="textBoxIndex">
+            <p class="homePageText" id="mainText">RECOMMENDED</p>
+        </div>
     </div>
-    <div class="mdl-card__supporting-text" id="activitiesTitleText">
-      <p id="homepagetext">Discover locations through a variety of different ways</p>
-    </div>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-  </div>
+</div>
+<div class="categoryBreak categoryLine">
+    <h2 class="mainSubText">WHAT WE LIKE</h2>
+
+</div>
   <!-- buttons -->
 
   <hr>
 
   <!-- locations -->
   <div id="categoryGridHolder"></div>
+
+<dialog class="mdl-dialog" id="modalDialog">
+    <div class="mdl-dialog__content">
+        <div class="mdl-card" id="modalCard">
+            <div class="mdl-card__title" id="modalTitle">
+                <h2 class="mdl-card__title-text" id="modalPlace"></h2>
+            </div>
+            <div class="mdl-card__media">
+                <div id="smallMap"></div>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <p id="modalAddress"></p>
+                <p id="modalDescription"></p>
+            </div>
+
+            <div id="modalRating">
+                <div class="wrap">
+                    <div class="votes" id="modalVotes"></div>
+                    <div class="button" id="modalUpvote">Upvote!</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close">Close</button>
+    </div>
+</dialog>
 
   <br><br><br><br><br>
 

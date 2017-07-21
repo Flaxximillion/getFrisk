@@ -10,7 +10,7 @@ gen
 .firebaserc
 .firebase.json
 database.rules.json
-public
 functions
+public
 firebase.json
 .DS_store

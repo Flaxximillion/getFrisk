@@ -23,60 +23,59 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">FRISK<small>  see something</small></span>
+            <span class="mdl-layout-title"><strong>FRISK</strong><small>  <i> see something</i></small></span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation.  -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="map.html">Add a Location</a>
-                <a class="mdl-navigation__link" href="index.html">Home</a>
+                <!--
+                      <a class="mdl-navigation__link" href="index.html">HOME</a>
+                      <a class="mdl-navigation__link" href="map.html">ADD A LOCATION</a> -->
+
             </nav>
             <!-- Button to open the modal login form -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
             <!-- The Modal -->
-    <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'"
-    class="close" title="Close Modal">&times;</span>
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
 
-      <!-- Modal Content -->
-      <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
-       <!--  <div class="container"> -->
-          <!-- <label><b>Email</b></label> -->
-          <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
-          <br>
+                <!-- Modal Content -->
+                <div class="modal-content animate" style="background-color:teal; width: 400px;    box-shadow: 5px 5px 5px 5px gray;"action="/action_page.php">
 
-          <!-- <label><b>Password</b></label> -->
-          <input type="password" placeholder="Password" name="psw" required id="txtPassword"><br>
-          <br>
+                    <!--  <div class="container"> -->
+                    <!-- <label><b>Email</b></label> -->
+                    <input type="text" placeholder="Email" name="uname" required id="txtEmail"><br>
+                    <br>
 
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnLogin" onclick="LoginEmailPassword()">SIGN IN</button><br>
+                    <!-- <label><b>Password</b></label> -->
+                    <input type="password" placeholder="Password" name="psw" required id="txtPassword"><br>
+                    <br>
 
-          <br>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnLogin" onclick="LoginEmailPassword()">SIGN IN</button><br>
 
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnGoogleLogin" onclick="googleSignin()">SIGN IN WITH GOOGLE</button><br>
+                    <br>
 
-          <br>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnGoogleLogin" onclick="googleSignin()">SIGN IN WITH GOOGLE</button><br>
 
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnRegister" onclick="registerWithEmailPassword()">Register</button><br>
+                    <br>
 
-          <br>
-        </div>
-        </div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" id="btnRegister" onclick="registerWithEmailPassword()">Register</button><br>
+
+                    <br>
+                </div>
+            </div>
         </div>
     </header>
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">getFrisk</span>
+        <span class="mdl-layout-title" id="getFrisk">getFrisk</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Categories</a>
-            <a class="mdl-navigation__link" href="">Add a Location</a>
-            <a class="mdl-navigation__link" href="">Activities</a>
-            <a class="mdl-navigation__link" href="">Art</a>
-            <a class="mdl-navigation__link" href="">Booze</a>
-            <a class="mdl-navigation__link" href="">The Great Outdoors</a>
-            <a class="mdl-navigation__link" href="">Fun and Games</a>
-            <a class="mdl-navigation__link" href="">Food</a>
-            <a class="mdl-navigation__link" href="">Shops</a>
-            <a class="mdl-navigation__link" href="">Live Events</a>
+            <!-- <a class="mdl-navigation__link" href="">Categories</a -->
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="map.html">Add a Location</a>
+            <a class="mdl-navigation__link" href="newest.html">Newest</a>
+            <a class="mdl-navigation__link" href="ourpicks.html">Our Picks</a>
+            <a class="mdl-navigation__link" href="highestrated.html">Highest Rated</a>
         </nav>
     </div>
 </div>
@@ -88,28 +87,24 @@
 <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="imageBannerHome">
     <div class="mdl-card__title" id="imageBannerTitle">
         <div class="textBoxIndex">
-            <p class="homePageText"> Find and share the most interesting creations, locations, people, and experiences
+            <p class="homePageText" id="mainText"> Find and share the most interesting creations, locations, people, and experiences
                 in
                 Austin, TX</p>
         </div>
     </div>
-    <div class="mdl-card__supporting-text" id="homepageTitleText">
-        <p class="homePageText">Discover locations</p>
-    </div>
 </div>
+<div class="categoryBreak categoryLine">
+    <h2 class="mainSubText">FIND SOMETHING NEW</h2>
 
-
-<div class="mdl-card__actions mdl-card--border">
 </div>
-
-
 <!-- Image card -->
 <div class="mdl-grid" id="imageBox">
+
     <div class="mdl-cell mdl-cell--4-col">
         <div class="demo-card-image mdl-card mdl-shadow--2dp imageCards22" id="HighestRatedImageCard">
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="../highestrated.html">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="highestrated.html">
                     Highest Rated
                 </a>
             </div>
@@ -153,7 +148,7 @@
             <div class="mdl-card__supporting-text">Submit your discoveries here!</div>
             <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                   id="sumbmitYourOwnButton" href="map.html">
+                   id="submitYourOwnButton" href="map.html">
                     Click Here to Share
                 </a>
             </div>
@@ -161,11 +156,10 @@
     </div>
 </div>
 
-<hr>
-<h1 id="categoryBreak">DISCOVER ART, FOOD, AND OTHER CATEGORIES</h1>
+<div class="categoryBreak">
+    <h2 class="mainSubText">DISCOVER ART, FOOD, AND OTHER CATEGORIES</h2>
+</div>
 
-<hr>
-<p id="categoryBreak2">SORT LOCATIONS</p>
 <div class="mdl-grid sortbuttons">
     <div class="mdl-cell mdl-cell--2-col">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect sortButton"
@@ -194,7 +188,7 @@
     <div class="mdl-cell mdl-cell--2-col">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
                 id="resetCategories" disabled>
-            Reset
+            View Categories
         </button>
     </div>
 </div>
@@ -339,23 +333,38 @@
 </section>
 
 <dialog class="mdl-dialog">
-    <h4 class="mdl-dialog__title" id="modalPlace"></h4>
     <div class="mdl-dialog__content">
-        <div id="smallMap"></div>
-        <img class='modalImage' id="modalImage">
-        <p id="modalAddress"></p>
-        <p id="modalDescription"></p>
-        <div id="modalRating">
-            <div class="wrap">
-                <div class="votes" id="modalVotes"></div>
-                <div class="button" id="modalUpvote">Upvote!</div>
+        <div class="mdl-card" id="modalCard">
+            <div class="mdl-card__title" id="modalTitle">
+                <h2 class="mdl-card__title-text" id="modalPlace"></h2>
+            </div>
+            <div class="mdl-card__media">
+                <div id="smallMap"></div>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <p id="modalAddress"></p>
+                <p id="modalDescription"></p>
+            </div>
+
+            <div id="modalRating">
+                <div class="wrap">
+                    <div class="votes" id="modalVotes"></div>
+                    <div class="button" id="modalUpvote">Upvote!</div>
+                </div>
             </div>
         </div>
+
     </div>
     <div class="mdl-dialog__actions">
         <button type="button" class="mdl-button close">Close</button>
     </div>
 </dialog>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
@@ -366,7 +375,7 @@
         </ul>
     </div>
     <div class="mdl-mini-footer__right-section">
-        <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:75px;">
+        <!-- <img src="assets/images/FriskLogo.png" alt="Mountain View" style="width:150px;height:70px; margin-top: 5px;"> -->
     </div>
 </footer>
 

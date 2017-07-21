@@ -169,7 +169,11 @@ function showCardModal(data, key, img) {
     $("#modalDescription").text(data.description);
     $("#modalPlace").text(data.place);
     $("#modalVotes").text(data.score);
-    $("#modalImage").attr('src', `url('${img})'`);
+
+    $("#modalDialog").css({
+        "background-image": `url('${img}')`,
+        "background-size": "cover"
+    });
 
     dialog.showModal();
 

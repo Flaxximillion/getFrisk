@@ -100,18 +100,28 @@
 
 <!-- location modal -->
 
-<dialog class="mdl-dialog">
-    <h4 class="mdl-dialog__title" id="modalPlace"></h4>
+<dialog class="mdl-dialog" id="modalDialog">
     <div class="mdl-dialog__content">
-        <img class='modalImage' id="modalImage">
-        <p id="modalAddress"></p>
-        <p id="modalDescription"></p>
-        <div id="modalRating">
-            <div class="wrap">
-                <div class="votes" id="modalVotes"></div>
-                <div class="button" id="modalUpvote">Upvote!</div>
+        <div class="mdl-card" id="modalCard">
+            <div class="mdl-card__title" id="modalTitle">
+                <h2 class="mdl-card__title-text" id="modalPlace"></h2>
+            </div>
+            <div class="mdl-card__media">
+                <img id="modalImage">
+            </div>
+            <div class="mdl-card__supporting-text">
+                <p id="modalAddress"></p>
+                <p id="modalDescription"></p>
+            </div>
+
+            <div id="modalRating">
+                <div class="wrap">
+                    <div class="votes" id="modalVotes"></div>
+                    <div class="button" id="modalUpvote">Upvote!</div>
+                </div>
             </div>
         </div>
+
     </div>
     <div class="mdl-dialog__actions">
         <button type="button" class="mdl-button close">Close</button>

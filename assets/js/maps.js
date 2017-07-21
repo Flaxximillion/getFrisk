@@ -259,6 +259,7 @@ function showModal(pin, key, img){
     score.once('value', function(snapshot){
         $("#modalVotes").text(snapshot.val());
     });
+    console.log(currImg);
     $("#modalImage").attr('src', $(img).attr('src')).addClass('modalImage');
     $("#modalAddress").text(pin.address);
     $("#modalDescription").text(pin.description);
